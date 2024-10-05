@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E2F1E7;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  max-width: 85%;
+  margin: 20px auto; 
+  padding: 20px;
+  background-color: #629584;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+.btn {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.submit{
+  background-color: blue;
+}
+
+.cancel{
+  background-color: blue;
+}
+
+.add-user {
+  background-color: #387478;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.add-user:hover {
+  background-color: #387478;
+}
+
+.edit {
+  background-color: #2196F3; 
+}
+
+.edit:hover {
+  background-color: #1e88e5;
+}
+
+.delete {
+  background-color: #f44336; 
+}
+
+.delete:hover {
+  background-color: #e53935;
+}
+
+.details {
+  background-color: #FFC107; 
+}
+
+.details:hover {
+  background-color: #ffb300;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #ffffff; 
+}
+
+.user-table tr:nth-child(odd) {
+  background-color: #dac9c9; 
+}
+
+.user-table tr:hover {
+  background-color: #e8f0fe; 
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-content input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  width: 48%;
+}
+
+@media (max-width: 768px) {
+  .App {
+    margin: 10px; 
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 10px;
+    font-size: 14px; /* Slightly smaller font size for better fit */
+  }
+
+  .user-table {
+    display: block;
+    overflow-x: auto; /* Allow horizontal scrolling */
+  }
+
+  .modal-content {
+    padding: 15px; /* Reduced padding for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Smaller font for mobile */
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+  }
+
+  .modal-buttons button {
+    width: 100%;
+    margin: 5px 0; /* Spacing between buttons */
+  }
+}
+
+/* here is search bar funcationality */
+/* Container */
+.dashboard-container {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 16px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2563eb;
+  margin: 0;
+}
+
+.dashboard-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-input {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  font-size: 16px;
+  outline: none;
+}
+
+
+.add-user-btn {
+  background-color: #2563eb; 
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-user-btn:hover {
+  background-color: #1e4db7; 
+}
+
